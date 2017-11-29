@@ -39,3 +39,8 @@ services:
     ports:
       - "9905:9864"
       - "8045:8042"
+  hive:
+    build: ./hadoop-hive
+    container_name: "hive"
+    ports:
+      - "10000:10000"
